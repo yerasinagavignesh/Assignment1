@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 CSS</title>
+
+    <style>
+        .ver-bar{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: rgb(119, 195, 198);
+            overflow: auto;
+        }
+        .ver-list a{
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            color: white;
+            background-color: orange;
+        }
+        .hori-bar{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightgray;
+        }
+        .hori-list{
+            display: inline-block;
+            border-right: 2px solid rgb(85, 66, 210);
+        }
+        .hori-list a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+        #HNB{
+        li a:hover{
+            color: white;
+            background-color: darkgray;
+        }
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h2>Vertical Navigation Bar</h2>
+        <nav>
+            <ul class="ver-bar">
+                <li class="ver-list"><a href="#home" class="home">Home</a></li>
+                <li class="ver-list"><a href="#java" class="sub">Java</a></li>
+                <li class="ver-list"><a href="#css" class="sub">CSS</a></li>
+                <li class="ver-list"><a href="#html" class="sub">HTML</a></li>
+                <li class="ver-list"><a href="#bootstrap" class="sub">Bootstrap</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <header>
+        <h2>Horizontal Navigation Bar</h2>
+        <nav>
+            <ul class=" hori-bar" id="HNB">
+                <li class="hori-list"><a href="#Home" class="home">Home</a></li>
+                <li class="hori-list"><a href="#java" class="sub">Java</a></li>
+                <li class="hori-list"><a href="#css" class="sub">CSS</a></li>
+                <li class="hori-list"><a href="#html" class="sub">HTML</a></li>
+                <li class="hori-list"><a href="#bootstrap" class="sub">Bootstrap</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+</body>
+</html>
